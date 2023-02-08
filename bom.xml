@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serialNumber="urn:uuid:6500dab1-cd4a-4827-9560-600b31a021ce" version="1" xmlns="http://cyclonedx.org/schema/bom/1.4">
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serialNumber="urn:uuid:d8ed3101-9f37-4d6f-858a-e95f94e94247" version="1" xmlns="http://cyclonedx.org/schema/bom/1.4">
   <metadata>
     <tools>
       <tool>
@@ -8,38 +8,91 @@
         <version>2.7.0.0</version>
       </tool>
     </tools>
-    <component type="application" bom-ref="MVEIntegration@0.0.0">
-      <name>MVEIntegration</name>
+    <component type="application" bom-ref="MVE_FTP_Library@0.0.0">
+      <name>MVE_FTP_Library</name>
       <version>0.0.0</version>
     </component>
   </metadata>
   <components>
-    <component type="library" bom-ref="pkg:nuget/Newtonsoft.Json@8.0.1">
+    <component type="library" bom-ref="pkg:nuget/Newtonsoft.Json@13.0.1">
       <publisher>James Newton-King</publisher>
       <name>Newtonsoft.Json</name>
-      <version>8.0.1</version>
+      <version>13.0.1</version>
       <description>Json.NET is a popular high-performance JSON framework for .NET</description>
       <hashes>
-        <hash alg="SHA-512">53E8BDCFD86D2EF638D30EB32F95151C20D73290EF55910706F5F78E14A9C7A1F72280F68A54139A49940D1A0BB9F0DEA7B20A7806F63624398D4BC5ACF35461</hash>
+        <hash alg="SHA-512">AF4C1A7044A3D1EB6BC58236D4624689374D18D54428BC22CF9847D8FBF87FC92D80B90201BE79E55C02330A3A21E0E910C8C87497F64C2901451CE1E459EF4D</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
-          <url>https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md</url>
         </license>
       </licenses>
-      <purl>pkg:nuget/Newtonsoft.Json@8.0.1</purl>
+      <copyright>Copyright © James Newton-King 2008</copyright>
+      <purl>pkg:nuget/Newtonsoft.Json@13.0.1</purl>
       <externalReferences>
         <reference type="website">
-          <url>http://www.newtonsoft.com/json</url>
+          <url>https://www.newtonsoft.com/json</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/JamesNK/Newtonsoft.Json</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/SSH.NET@2013.4.7">
+      <publisher>Renci</publisher>
+      <name>SSH.NET</name>
+      <version>2013.4.7</version>
+      <description>This project was inspired by Sharp.SSH library which was ported from Java.  This library is a complete rewrite using .NET, without any third party dependencies and to utilize the parallelism as much as possible to allow best performance you can get.  SSH.NET supports .NET 3.5, 4.0, Silverlight 4.0, Silverlight 5.0, Windows Phone 7 and Windows Phone 8.</description>
+      <hashes>
+        <hash alg="SHA-512">007CCFFF4F22D6A9B44897E8BD5EFFEE8A550F6736637B293F3389D867BE885FDB4C1007CB11497BCF02380A9980A321D14403C9219049503EB8982F23066B3D</hash>
+      </hashes>
+      <copyright>2013, RENCI</copyright>
+      <purl>pkg:nuget/SSH.NET@2013.4.7</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://sshnet.codeplex.com/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/System.Net.Http@4.3.4">
+      <publisher>Microsoft</publisher>
+      <name>System.Net.Http</name>
+      <version>4.3.4</version>
+      <description>Provides a programming interface for modern HTTP applications, including HTTP client components that allow applications to consume web services over HTTP and HTTP components that can be used by both clients and servers for parsing HTTP headers.
+
+Commonly Used Types:
+System.Net.Http.HttpResponseMessage
+System.Net.Http.DelegatingHandler
+System.Net.Http.HttpRequestException
+System.Net.Http.HttpClient
+System.Net.Http.MultipartContent
+System.Net.Http.Headers.HttpContentHeaders
+System.Net.Http.HttpClientHandler
+System.Net.Http.StreamContent
+System.Net.Http.FormUrlEncodedContent
+System.Net.Http.HttpMessageHandler
+ 
+When using NuGet 3.x this package requires at least version 3.4.</description>
+      <hashes>
+        <hash alg="SHA-512">D10A9B1DEBC2B29C81DE0646B2F2E35BAC6A5519077113FFD50F643299C6A8ECDD8AEDB5C535A1A1A29893F24E7151407F133F8330B329CF0D6DC0CB1E062EB0</hash>
+      </hashes>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/System.Net.Http@4.3.4</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://dot.net/</url>
         </reference>
       </externalReferences>
     </component>
   </components>
   <dependencies>
-    <dependency ref="MVEIntegration@0.0.0">
-      <dependency ref="pkg:nuget/Newtonsoft.Json@8.0.1" />
+    <dependency ref="MVE_FTP_Library@0.0.0">
+      <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.1" />
+      <dependency ref="pkg:nuget/SSH.NET@2013.4.7" />
+      <dependency ref="pkg:nuget/System.Net.Http@4.3.4" />
     </dependency>
-    <dependency ref="pkg:nuget/Newtonsoft.Json@8.0.1" />
+    <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.1" />
+    <dependency ref="pkg:nuget/SSH.NET@2013.4.7" />
+    <dependency ref="pkg:nuget/System.Net.Http@4.3.4" />
   </dependencies>
 </bom>

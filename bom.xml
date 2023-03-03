@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serialNumber="urn:uuid:d8ed3101-9f37-4d6f-858a-e95f94e94247" version="1" xmlns="http://cyclonedx.org/schema/bom/1.4">
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serialNumber="urn:uuid:24cf1e1b-796c-446c-b90b-85d6dd66b919" version="1" xmlns="http://cyclonedx.org/schema/bom/1.4">
   <metadata>
     <tools>
       <tool>
@@ -8,91 +8,307 @@
         <version>2.7.0.0</version>
       </tool>
     </tools>
-    <component type="application" bom-ref="MVE_FTP_Library@0.0.0">
-      <name>MVE_FTP_Library</name>
+    <component type="application" bom-ref="SsrsMveWeb@0.0.0">
+      <name>SsrsMveWeb</name>
       <version>0.0.0</version>
     </component>
   </metadata>
   <components>
-    <component type="library" bom-ref="pkg:nuget/Newtonsoft.Json@13.0.1">
-      <publisher>James Newton-King</publisher>
-      <name>Newtonsoft.Json</name>
-      <version>13.0.1</version>
-      <description>Json.NET is a popular high-performance JSON framework for .NET</description>
+    <component type="library" bom-ref="pkg:nuget/bootstrap@3.3.1">
+      <publisher>Mark Otto,Jacob Thornton</publisher>
+      <name>bootstrap</name>
+      <version>3.3.1</version>
+      <description>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</description>
       <hashes>
-        <hash alg="SHA-512">AF4C1A7044A3D1EB6BC58236D4624689374D18D54428BC22CF9847D8FBF87FC92D80B90201BE79E55C02330A3A21E0E910C8C87497F64C2901451CE1E459EF4D</hash>
+        <hash alg="SHA-512">6A4619DB5CC1FC2E4702026326BB458134C5D9640417F22E778648FA2257982CBCE63037D8E85FAE96ADE4CA2A94B178A654A59F89C7B5C8A6FAFB5C39339B42</hash>
       </hashes>
       <licenses>
         <license>
           <id>MIT</id>
+          <url>https://github.com/twbs/bootstrap/blob/main/LICENSE</url>
         </license>
       </licenses>
-      <copyright>Copyright © James Newton-King 2008</copyright>
-      <purl>pkg:nuget/Newtonsoft.Json@13.0.1</purl>
+      <copyright>Copyright 2013</copyright>
+      <purl>pkg:nuget/bootstrap@3.3.1</purl>
       <externalReferences>
         <reference type="website">
-          <url>https://www.newtonsoft.com/json</url>
-        </reference>
-        <reference type="vcs">
-          <url>https://github.com/JamesNK/Newtonsoft.Json</url>
+          <url>https://github.com/twbs/bootstrap</url>
         </reference>
       </externalReferences>
     </component>
-    <component type="library" bom-ref="pkg:nuget/SSH.NET@2013.4.7">
-      <publisher>Renci</publisher>
-      <name>SSH.NET</name>
-      <version>2013.4.7</version>
-      <description>This project was inspired by Sharp.SSH library which was ported from Java.  This library is a complete rewrite using .NET, without any third party dependencies and to utilize the parallelism as much as possible to allow best performance you can get.  SSH.NET supports .NET 3.5, 4.0, Silverlight 4.0, Silverlight 5.0, Windows Phone 7 and Windows Phone 8.</description>
-      <hashes>
-        <hash alg="SHA-512">007CCFFF4F22D6A9B44897E8BD5EFFEE8A550F6736637B293F3389D867BE885FDB4C1007CB11497BCF02380A9980A321D14403C9219049503EB8982F23066B3D</hash>
-      </hashes>
-      <copyright>2013, RENCI</copyright>
-      <purl>pkg:nuget/SSH.NET@2013.4.7</purl>
-      <externalReferences>
-        <reference type="website">
-          <url>http://sshnet.codeplex.com/</url>
-        </reference>
-      </externalReferences>
-    </component>
-    <component type="library" bom-ref="pkg:nuget/System.Net.Http@4.3.4">
-      <publisher>Microsoft</publisher>
-      <name>System.Net.Http</name>
-      <version>4.3.4</version>
-      <description>Provides a programming interface for modern HTTP applications, including HTTP client components that allow applications to consume web services over HTTP and HTTP components that can be used by both clients and servers for parsing HTTP headers.
+    <component type="library" bom-ref="pkg:nuget/Bootstrap.v3.Datetimepicker@4.0.1">
+      <publisher>Eonasdan</publisher>
+      <name>Bootstrap.v3.Datetimepicker</name>
+      <version>4.0.1</version>
+      <description>A date/time picker component designed to work with Bootstrap 3 and Momentjs.
 
-Commonly Used Types:
-System.Net.Http.HttpResponseMessage
-System.Net.Http.DelegatingHandler
-System.Net.Http.HttpRequestException
-System.Net.Http.HttpClient
-System.Net.Http.MultipartContent
-System.Net.Http.Headers.HttpContentHeaders
-System.Net.Http.HttpClientHandler
-System.Net.Http.StreamContent
-System.Net.Http.FormUrlEncodedContent
-System.Net.Http.HttpMessageHandler
- 
-When using NuGet 3.x this package requires at least version 3.4.</description>
+For usage, installation and demos see Project Site on GitHub
+
+For CSS version install Bootstrap.v3.Datetimepicker.CSS</description>
       <hashes>
-        <hash alg="SHA-512">D10A9B1DEBC2B29C81DE0646B2F2E35BAC6A5519077113FFD50F643299C6A8ECDD8AEDB5C535A1A1A29893F24E7151407F133F8330B329CF0D6DC0CB1E062EB0</hash>
+        <hash alg="SHA-512">E4C6062D36DF1FDAF5ED8050FA612188F95A4C65A2B59E37DCB18A0D5310D1EC481505795E4D49D86DEB1EB0328B4F01E6AEEB5216B4489D92F0C50CE203E2ED</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://github.com/Eonasdan/tempus-dominus/blob/master/LICENSE</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Bootstrap.v3.Datetimepicker@4.0.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/Eonasdan/bootstrap-datetimepicker</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/EntityFramework@6.1.2">
+      <publisher>Microsoft</publisher>
+      <name>EntityFramework</name>
+      <version>6.1.2</version>
+      <description>Entity Framework is Microsoft's recommended data access technology for new applications.</description>
+      <hashes>
+        <hash alg="SHA-512">24522DA3D0716DFC3A136A9C99C5D4785ABABEEE07977C2F10F40C3D4212E03B34F3508731E8901449063BCCABE4C4DE9384A9BD856D8859F2B267DD998175E7</hash>
+      </hashes>
+      <purl>pkg:nuget/EntityFramework@6.1.2</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://go.microsoft.com/fwlink/?LinkID=320540</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/jQuery@2.1.3">
+      <publisher>jQuery Foundation, Inc.</publisher>
+      <name>jQuery</name>
+      <version>2.1.3</version>
+      <description>jQuery is a new kind of JavaScript Library.
+        jQuery is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.
+        NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/</description>
+      <hashes>
+        <hash alg="SHA-512">D8011EFA3B0AA1874FAF74BF6C36D9263129912E63ADCC13AD93F6EFC4041D37AAF84321985F72A7FDD5D27037315CFBDCB71BAC3C55088B24E4478C4A0B87BA</hash>
+      </hashes>
+      <purl>pkg:nuget/jQuery@2.1.3</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://jquery.com/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/jQuery.UI.Combined@1.11.2">
+      <publisher>jQuery UI Team</publisher>
+      <name>jQuery.UI.Combined</name>
+      <version>1.11.2</version>
+      <description>The full jQuery UI library as a single combined file. Includes the base theme.</description>
+      <hashes>
+        <hash alg="SHA-512">3DDBCAE2054FAD64ACC1329869710D93E18A91A9A2658095ED5746730AD562B5764968D3131A5C54B44AD51300B895576F34518FED266B736D9424438350ACD8</hash>
+      </hashes>
+      <purl>pkg:nuget/jQuery.UI.Combined@1.11.2</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://jqueryui.com/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/jQuery.Validation@1.13.1">
+      <publisher>Jörn Zaefferer</publisher>
+      <name>jQuery.Validation</name>
+      <version>1.13.1</version>
+      <description>This jQuery plugin makes simple clientside form validation trivial, while offering lots of option for customization. That makes a good choice if you’re building something new from scratch, but also when you’re trying to integrate it into an existing application with lots of existing markup. The plugin comes bundled with a useful set of validation methods, including URL and email validation, while providing an API to write your own methods. All bundled methods come with default error messages in english and translations into 32 languages.
+    NOTE: This package is maintained on behalf of the library owners by the NuGet Community Packages project at http://nugetpackages.codeplex.com/</description>
+      <hashes>
+        <hash alg="SHA-512">696DE3A42E0EFA705329604C6AC0D5C780E2C505C43AD5880C75FAA6A6DF2FAAB1691E4D544FABE44B276B266EAE1172787BCAE9D6E96E9F2B880005BB982C71</hash>
+      </hashes>
+      <purl>pkg:nuget/jQuery.Validation@1.13.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://bassistance.de/jquery-plugins/jquery-plugin-validation/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.Mvc@3.0.20105.1">
+      <publisher>Microsoft</publisher>
+      <name>Microsoft.AspNet.Mvc</name>
+      <version>3.0.20105.1</version>
+      <description>This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.</description>
+      <hashes>
+        <hash alg="SHA-512">AAE85860576A5B9267233ED60E5937E66A7C93EF78CEE53E509F8AE801BA5661A848482C9F0B8323629A86577948A1F6F2038CA36D5EEB635DEBACA86751DB91</hash>
+      </hashes>
+      <purl>pkg:nuget/Microsoft.AspNet.Mvc@3.0.20105.1</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.asp.net/mvc</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.Providers.Core@1.1">
+      <publisher>Microsoft</publisher>
+      <name>Microsoft.AspNet.Providers.Core</name>
+      <version>1.1</version>
+      <description>ASP.NET Universal Providers extend SQL support in ASP.NET 4 to all editions of SQL Server 2005 and later and to SQL Azure.</description>
+      <hashes>
+        <hash alg="SHA-512">066F0724A3194947D56B733631BDA45F5137D239BA3DAABD055A5CACAC189329F4D18C006E7C897DC4959042176E26B2A69C470E36625921A580587465F6481D</hash>
+      </hashes>
+      <purl>pkg:nuget/Microsoft.AspNet.Providers.Core@1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.Providers.LocalDB@1.1">
+      <publisher>Microsoft</publisher>
+      <name>Microsoft.AspNet.Providers.LocalDB</name>
+      <version>1.1</version>
+      <description>ASP.NET Universal Providers extend SQL support in ASP.NET 4 to all editions of SQL Server 2005 and later and to SQL Azure.</description>
+      <hashes>
+        <hash alg="SHA-512">7FF39F0EA40C3808F1AFF9C90AE624A4AD3D77F7382724C3F9DFAEC13696B045953945D89BF0E337A4B4A2D6151ED8F48A99DA748351FDAD5E166482E7A63228</hash>
+      </hashes>
+      <purl>pkg:nuget/Microsoft.AspNet.Providers.LocalDB@1.1</purl>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.Razor@1.0.20105.408">
+      <publisher>Microsoft</publisher>
+      <name>Microsoft.AspNet.Razor</name>
+      <version>1.0.20105.408</version>
+      <description>This package contains the runtime assemblies for ASP.NET Web Pages. ASP.NET Web Pages and the new Razor syntax provide a fast, terse, clean and lightweight way to combine server code with HTML to create dynamic web content.</description>
+      <hashes>
+        <hash alg="SHA-512">A9E9E13D545BB112F7EA05002ADB55C9FBDFB8EC255B254C1F1599AE521DB11DE933D0C9458B538CFFE1C55A128A23F33F7FCAD98F95E014342307FDD7448A49</hash>
+      </hashes>
+      <purl>pkg:nuget/Microsoft.AspNet.Razor@1.0.20105.408</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.asp.net/web-pages</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.AspNet.WebPages@1.0.20105.408">
+      <publisher>Microsoft</publisher>
+      <name>Microsoft.AspNet.WebPages</name>
+      <version>1.0.20105.408</version>
+      <description>This package contains core runtime assemblies shared between ASP.NET MVC and ASP.NET Web Pages.</description>
+      <hashes>
+        <hash alg="SHA-512">FA9DEDFB35F12CB3472744334F2AC890AB45A51CC89A6D5BF84C1CD514BD38028CB47D1D5FFF274DE8C3E1E8C7CA91B53089AA7B9A9A2B1BB474F52B66D28876</hash>
+      </hashes>
+      <purl>pkg:nuget/Microsoft.AspNet.WebPages@1.0.20105.408</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.asp.net/web-pages</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.jQuery.Unobtrusive.Validation@3.2.3">
+      <publisher>Microsoft</publisher>
+      <name>Microsoft.jQuery.Unobtrusive.Validation</name>
+      <version>3.2.3</version>
+      <description>jQuery plugin that unobtrusively sets up jQuery.Validation.</description>
+      <hashes>
+        <hash alg="SHA-512">D1FE5E60F657D2753160A53A4E8509FDC95A57B3B5E64569DFF5F6C65CFF2FD5CC6383990C494C99734D05B10BBF0EAAF69018CCBC2F7FDE54CC45FAE5563837</hash>
       </hashes>
       <copyright>© Microsoft Corporation. All rights reserved.</copyright>
-      <purl>pkg:nuget/System.Net.Http@4.3.4</purl>
+      <purl>pkg:nuget/Microsoft.jQuery.Unobtrusive.Validation@3.2.3</purl>
       <externalReferences>
         <reference type="website">
-          <url>https://dot.net/</url>
+          <url>http://www.asp.net/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Web.Infrastructure@1.0.0.0">
+      <publisher>Microsoft</publisher>
+      <name>Microsoft.Web.Infrastructure</name>
+      <version>1.0.0.0</version>
+      <description>This package contains the Microsoft.Web.Infrastructure assembly that lets you dynamically register HTTP modules at run time.</description>
+      <hashes>
+        <hash alg="SHA-512">4CAB0640E92DAE5066AFAAA981DB80FBD12D189547AB842A6362D35B61D3F648E66FC587880619A0EE3DE8DF534FFB4942679D1104A3F4F106E8CAACD95AFD9F</hash>
+      </hashes>
+      <purl>pkg:nuget/Microsoft.Web.Infrastructure@1.0.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.asp.net</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Modernizr@2.5.3">
+      <publisher>Faruk Ateş, Paul Irish, Alex Sexton</publisher>
+      <name>Modernizr</name>
+      <version>2.5.3</version>
+      <description>Modernizr is a small and simple JavaScript library that helps you take advantage of emerging web technologies (CSS3, HTML 5) while still maintaining a fine level of control over older browsers that may not yet support these new technologies.</description>
+      <hashes>
+        <hash alg="SHA-512">BDBBE685C8481DF076CDA27AEA349CB4CBF9E81829CDE174CC03F0F9F9B41FC809F96F0E5ACCE2C7741B7510F440CB0BFC1C821F710062459BCB0C792B2CABA8</hash>
+      </hashes>
+      <purl>pkg:nuget/Modernizr@2.5.3</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://www.modernizr.com/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Moment.js@2.8.4">
+      <publisher>Tim Wood</publisher>
+      <name>Moment.js</name>
+      <version>2.8.4</version>
+      <description>A lightweight javascript date library for parsing, manipulating, and formatting dates.</description>
+      <hashes>
+        <hash alg="SHA-512">BDB8EC000EFE288800C96198F96D4C64B3ACD8AE5DF57C1CD91B69D2FBBCDD03382CA8CBAB5B5832F9DA9AF98F86B70162C665B7A2CAFA053A4B34D3B1AEE85E</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+          <url>https://github.com/moment/moment/blob/master/LICENSE</url>
+        </license>
+      </licenses>
+      <purl>pkg:nuget/Moment.js@2.8.4</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://momentjs.com/</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Twitter.Bootstrap.Less@3.0.0">
+      <publisher>Jacob Thornton,Mark Otto</publisher>
+      <name>Twitter.Bootstrap.Less</name>
+      <version>3.0.0</version>
+      <description>Copyright 2012 Twitter, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.</description>
+      <hashes>
+        <hash alg="SHA-512">34858D04F1FF1868B71745831FA4503543DFBD9E0A1E09A7A7442F43F49088727E2AEEF9670A6CB9BF78E3181985A08F144BC1713A9381EFE6D05B2B94C64658</hash>
+      </hashes>
+      <purl>pkg:nuget/Twitter.Bootstrap.Less@3.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>http://getbootstrap.com</url>
         </reference>
       </externalReferences>
     </component>
   </components>
   <dependencies>
-    <dependency ref="MVE_FTP_Library@0.0.0">
-      <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.1" />
-      <dependency ref="pkg:nuget/SSH.NET@2013.4.7" />
-      <dependency ref="pkg:nuget/System.Net.Http@4.3.4" />
+    <dependency ref="pkg:nuget/Bootstrap.v3.Datetimepicker@4.0.1" />
+    <dependency ref="pkg:nuget/bootstrap@3.3.1" />
+    <dependency ref="pkg:nuget/EntityFramework@6.1.2" />
+    <dependency ref="pkg:nuget/jQuery.UI.Combined@1.11.2" />
+    <dependency ref="pkg:nuget/jQuery.Validation@1.13.1" />
+    <dependency ref="pkg:nuget/jQuery@2.1.3" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.Mvc@3.0.20105.1" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.Providers.Core@1.1" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.Providers.LocalDB@1.1" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.Razor@1.0.20105.408" />
+    <dependency ref="pkg:nuget/Microsoft.AspNet.WebPages@1.0.20105.408" />
+    <dependency ref="pkg:nuget/Microsoft.jQuery.Unobtrusive.Validation@3.2.3" />
+    <dependency ref="pkg:nuget/Microsoft.Web.Infrastructure@1.0.0.0" />
+    <dependency ref="pkg:nuget/Modernizr@2.5.3" />
+    <dependency ref="pkg:nuget/Moment.js@2.8.4" />
+    <dependency ref="pkg:nuget/Twitter.Bootstrap.Less@3.0.0" />
+    <dependency ref="SsrsMveWeb@0.0.0">
+      <dependency ref="pkg:nuget/bootstrap@3.3.1" />
+      <dependency ref="pkg:nuget/Bootstrap.v3.Datetimepicker@4.0.1" />
+      <dependency ref="pkg:nuget/EntityFramework@6.1.2" />
+      <dependency ref="pkg:nuget/jQuery@2.1.3" />
+      <dependency ref="pkg:nuget/jQuery.UI.Combined@1.11.2" />
+      <dependency ref="pkg:nuget/jQuery.Validation@1.13.1" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.Mvc@3.0.20105.1" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.Providers.Core@1.1" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.Providers.LocalDB@1.1" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.Razor@1.0.20105.408" />
+      <dependency ref="pkg:nuget/Microsoft.AspNet.WebPages@1.0.20105.408" />
+      <dependency ref="pkg:nuget/Microsoft.jQuery.Unobtrusive.Validation@3.2.3" />
+      <dependency ref="pkg:nuget/Microsoft.Web.Infrastructure@1.0.0.0" />
+      <dependency ref="pkg:nuget/Modernizr@2.5.3" />
+      <dependency ref="pkg:nuget/Moment.js@2.8.4" />
+      <dependency ref="pkg:nuget/Twitter.Bootstrap.Less@3.0.0" />
     </dependency>
-    <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.1" />
-    <dependency ref="pkg:nuget/SSH.NET@2013.4.7" />
-    <dependency ref="pkg:nuget/System.Net.Http@4.3.4" />
   </dependencies>
 </bom>
